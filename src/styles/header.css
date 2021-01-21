@@ -1,0 +1,50 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.header__left {
+  flex: 0.5;
+  display: flex;
+  min-width: 80px;
+  background-color: white;
+  color: gray;
+  border-radius: 30px;
+  align-items: center;
+  padding: 10px;
+}
+
+.header__left > input {
+  border: none;
+  width: 100%;
+}
+
+.header__right > h4 {
+  margin-left: 10px;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 320px) {
+  .header__left > input {
+    width: 40px;
+  }
+
+  .header__left {
+    width: 10px;
+    padding: 0.5px;
+  }
+
+  .header__right {
+    font-size: 15px;
+  }
+
+  .header__rightAvatar {
+    height: 10px;
+    margin-left: 5px;
+  }
+}
